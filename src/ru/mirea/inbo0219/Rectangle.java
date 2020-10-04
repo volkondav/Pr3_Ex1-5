@@ -28,7 +28,9 @@ public  class Rectangle extends Shape {
     }
 
     public void setWidth(double width) {
+        System.out.println("Ширина до "+ this.width);
         this.width = width;
+        System.out.println("Ширина после "+ this.width);
     }
 
     public double getLength() {
@@ -36,7 +38,9 @@ public  class Rectangle extends Shape {
     }
 
     public void setLength(double length) {
+        System.out.println("Длина до "+ this.length);
         this.length = length;
+        System.out.println("Длина после "+ this.length);
     }
 
     double getArea() {
@@ -49,7 +53,7 @@ public  class Rectangle extends Shape {
 
 
     public String toString() {
-        return "Shape: Rectangle," + "width " + width + "length " + length + "color " + color;
+        return "Shape: Rectangle, " + "width " + width + " length " + length + " color " + color;
     }
 
 }

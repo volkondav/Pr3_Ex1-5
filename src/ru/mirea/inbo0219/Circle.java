@@ -25,7 +25,9 @@ public class Circle extends Shape{
         return radius;
     }
     public void setRadius(double radius) {
+        System.out.printf("Радиус до " + this.radius );
         this.radius = radius;
+        System.out.println("Радиус после "+this.radius);
     }
 
     double getArea(){

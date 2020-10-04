@@ -8,7 +8,7 @@ public abstract class Shape {
     public Shape(){
         color = "Не задано";
         filled = false;
-    };
+    }
 
     public Shape(String color, boolean filled){
     this.color = color;
@@ -23,8 +23,8 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public void isFilled(String color){
-
+    public boolean isFilled(){
+        return filled;
     }
 
     public void setFilled(boolean filled) {
@@ -37,6 +37,7 @@ public abstract class Shape {
 
 
     public abstract String toString();
+
 }
 
 

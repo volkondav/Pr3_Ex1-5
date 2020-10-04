@@ -1,7 +1,8 @@
 package ru.mirea.inbo0219;
 
 public class Square extends Rectangle {
-    protected double side;
+    private double side;
+
     public Square(){
         this.color = "Не задано";
         this.filled = false;
@@ -28,11 +29,13 @@ public class Square extends Rectangle {
     }
 
     public void setSide(double side) {
+        System.out.println("Длина стороны до "+ this.side);
         this.side = side;
+        System.out.println("Длина стороны после "+ this.side);
     }
 
     public void setWidth(double side) {
-        super.setWidth(this.side);
+        super.setWidth(this.side);//------ почему здесь нельзя использовать this?
     }
 
     public void setLength(double side){
@@ -40,6 +43,6 @@ public class Square extends Rectangle {
     }
 
     public String toString() {
-        return "Shape: Square," + "side "+ side + "color " + color;
+        return "Shape: Square, " + "side "+ side + " color " + color;
     }
 }
